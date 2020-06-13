@@ -1,0 +1,44 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node .": "node run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Edi-Fatemi/EdiBot.git"
+  },
+  "author": "Edi",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "Utils": "^1.0.39",
+    "config.json": "0.0.4",
+    "cool-ascii-faces": "^1.3.4",
+    "discord-akairo": "^8.0.0",
+    "discord.bio": "^6.1.3",
+    "discord.io": "^2.5.3",
+    "discord.js": "^12.2.0",
+    "embed": "0.0.1",
+    "emoji": "^0.3.2",
+    "eslint": "^6.8.0",
+    "ffmpeg-static": "^4.0.1",
+    "foreman": "^3.0.1",
+    "fs": "0.0.1-security",
+    "mime": "^2.2.0",
+    "ms": "^2.1.2",
+    "opusscript": "0.0.7",
+    "pg": "^7.18.2",
+    "random-puppy": "^1.1.0",
+    "rich-embed": "^1.1.3",
+    "sequelize": "^5.21.12",
+    "sqlite": "^4.0.10",
+    "util": "^0.12.3",
+    "ytdl": "^1.2.0",
+    "ytdl-core": "^2.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": "My First Bot"
+}
