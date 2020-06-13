@@ -17,6 +17,19 @@ module.exports = bot => {
 		let status = statuses[Math.floor(Math.random() * statuses.length)];
         bot.user.setPresence({ activity: { name: bot.user.username + " Server.", type:"WATCHING" }, status: "online" });
         bot.user.setPresence({ activity: { name: bot.guilds.cache.size + " Servers.", type:"WATCHING" }, status: "online" })
-	}, 5000)
+    }, 5000)
+    
+
+
+    client.guilds.get('guild_id').emojis.forEach(emoji => console.log(emoji.animated ? '<a:' + emoji.name + ':' + emoji.id + '>' : '<:' + emoji.name + ':' + emoji.id + '>'));
+
+    // A fancier way
+    let static = [], animated = [];
+    client.guilds.get('guild_id').emojis.forEach(emoji => emoji.animated ? animated.push([emoji.id, emoji.name]) : static.push([emoji.id, emoji.name]));
+
+    console.log('Static Emojis\n');
+    static.forEach(emoji => console.log('<:' + emoji[1] + ':' + emoji[0] + '>'));
+    console.log('\nAnimated Emojis\n');
+    animated.forEach(emoji => console.log('<a:' + emoji[1] + ':' + emoji[0] + '>'));
 
 }
