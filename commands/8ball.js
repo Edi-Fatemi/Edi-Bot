@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(bot.user.username)
     .setColor("#9307D8")
     .addField("Soal: ", question)
-    .addField("Javab: ", replies[replies])
+    .addField("Javab: ", replies[result])
     .setFooter(message.author.tag)
     .setTimestamp();
 
