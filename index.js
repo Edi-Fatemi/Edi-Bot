@@ -11,6 +11,7 @@ const fs = require("fs");
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 const http = require("http");
+const moment = require('moment');
 
 var servers = {};
 
@@ -45,24 +46,7 @@ bot.on("message", async message => {
 	if (commandfile) commandfile.run(bot, message, args)
 
 
-
 	
-	if (message.content == "gamers") {
-		message.reply("https://discord.gg/wH85f2q");
-	}
-	if (message.content == "smasherbasher") {
-		message.reply("https://discord.gg/3ktaRPx");
-	}
-	if (message.content == "irpixel") {
-		message.reply("https://discord.gg/irpixel");
-	}
-	if (message.content == "eclipse") {
-		message.reply("https://discord.gg/JyR6fEB");
-	}
-	if (message.content == "mrhamed") {
-		message.reply("https://discord.gg/4fETzM4");
-	}
-		
 	const scores = require("./scores.json");
 	typeof scores; // object
 
