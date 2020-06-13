@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     if (!args[2]) return message.reply("Lotfan Soal Kamel Beporsid.!");
     let replies = ["Yes.", "No.", "Nemidonam.", "Shayad.", "Badan Soal konid.", "Kiri.", "Kheyli.", "Chokh Ziba.", "Sikim Khiyari.", "Shomale Yadam Bere", "Kos'sher Nago.", "Dorogh Migi.", "Begoo Be Emam Majid.", "Be Qoran Karim'ina.", "Ye Dildo Talaei."];
 
-    let result = Math.floor((Math.random() * result.length));
+    let result = Math.floor((Math.random() * replies.length));
     let question = args.slice(1).join(" ");
 
     let ballembed = new Discord.MessageEmbed()
