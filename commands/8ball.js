@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let questionArray = message.content.split(" ");
     let questionArgs = args.slice(1).join;
     
-    if (!args[2]) return message.reply("Lotfan Soal Kamel Beporsid.!");
+    if (!args[2] && undefined) return message.reply("Lotfan Soal Kamel Beporsid.!");
     let replies = ["Yes.", "No.", "Nemidonam.", "Shayad.", "Badan Soal konid.", "Kiri.", "Kheyli.", "Chokh Ziba.", "Sikim Khiyari.", "Shomale Yadam Bere", "Kos'sher Nago.", "Dorogh Migi.", "Begoo Be Emam Majid.", "Be Qoran Karim'ina.", "Ye Dildo Talaei."];
     let userArray = message.content.split(" ");
     let userArgs = userArray.slice(1);
