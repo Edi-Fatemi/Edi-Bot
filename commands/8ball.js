@@ -37,6 +37,6 @@ module.exports.config = {
     name: "8ball",
     description: "Answer a Fun questions",
     usage: "$8ball",
-    accessableby: "Member",
+    accessableby: "Members",
     aliases: []
 }
