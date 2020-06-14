@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("Gamers.")
         .setURL("https://discord.gg/SjBVuVv")  //("https://www.twitch.tv/e_d_i")
         .setAuthor(member.user.tag, member.user.displayAvatarURL())
-        .addField({ name:"**Smasher Basher.**", value:"https://discord.gg/3ktaRPx"})
+        .setDescription(`Smasher Basher: \n [https://discord.gg/3ktaRPx]`)
         .setColor("#9307D8")
         .setThumbnail("https://cdn.discordapp.com/attachments/660199575872602126/682459904287834147/photo-1538481199705-c710c4e965fc.jpg")
         .setImage(bot.user.displayAvatarURL())
