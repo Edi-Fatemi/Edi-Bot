@@ -13,6 +13,8 @@ bot.aliases = new Discord.Collection();
 const http = require("http");
 const moment = require('moment');
 const moment2 = require("moment-timezone");
+var { DateTime } = require('luxon');
+DateTime.local();
 const clock = require("node-emoji-clock");
 
 var servers = {};

@@ -29,6 +29,7 @@
     "ffmpeg-static": "^4.0.1",
     "foreman": "^3.0.1",
     "fs": "0.0.1-security",
+    "luxon": "^1.24.1",
     "mime": "^2.2.0",
     "minimist": "^1.2.5",
     "moment": "^2.26.0",
