@@ -6,21 +6,22 @@ typeof scores;
 
 
 module.exports.run = async (bot, message, args) => {
+
+    let userArray = message.content.split(" ");
+    let userArgs = userArray.slice(1);
+    let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member;
+
+
    const embed = new Discord.MessageEmbed()
         .setTitle("Smasher Basher.")
         .setURL("https://discord.gg/3ktaRPx")  //("https://www.twitch.tv/e_d_i")
-        .setAuthor(bot.user.username)
+        .setAuthor(member.user.tag, member.user.displayAvatarURL())
         .setDescription("User Embed")
         .setColor("#9307D8")
         .setThumbnail("https://cdn.discordapp.com/attachments/660199575872602126/682459904287834147/photo-1538481199705-c710c4e965fc.jpg")
-        .setImage("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
-        .setFooter(message.author.tag)
-        .addFields(
-            {name: "Test 1", value: "Value 1", inline: true},
-            {name: "Test 2", value: "Value 2", inline: true},
-            {name: "Test 3", value: "Value 3"},
-            {name: "Test 4", value: "Value 4"}
-        )
+        .setImage(bot.user.displayAvatarURL())
+        .setFooter(bot.user.username)
+        .addFields()
         .setTimestamp()
     message.channel.send(embed);
 

@@ -18,10 +18,10 @@ module.exports.run = async (bot, message, args) => {
     
 
     let ballembed = new Discord.MessageEmbed()
-    .setAuthor(bot.user.username)
+    .setAuthor(bot.user.username, bot.user.displayAvatarURL())
     .setTitle("8ball")
     .setColor("#9307D8")
-    .setThumbnail(member.user.displayAvatarURL(), message.author.tag)
+    .setThumbnail(member.user.displayAvatarURL())
     .addField("Soal: ",  questionArgs)
     .addField("Javab: ",  result)
     .setFooter(bot.user.username)

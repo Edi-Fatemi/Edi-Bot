@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
         var embed = new Discord.MessageEmbed()
         
         
-            .setAuthor(message.author.tag, member.user.displayAvatarURL())
+            .setAuthor(member.user.tag, member.user.displayAvatarURL())
             .setTitle("Commands Mored Etefadeh :")
             .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear \nmemberinfo```')
             .setThumbnail(bot.user.displayAvatarURL())
