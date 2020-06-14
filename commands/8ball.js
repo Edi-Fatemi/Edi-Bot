@@ -4,7 +4,7 @@ const config = require("../config.json");
 
 module.exports.run = async (bot, message, args) => {
     let questionArray = message.content.split(" ");
-    let questionArgs = questionArray.slice(bot.prefix.length+6);
+    let questionArgs = questionArray.slice(1);
 
     let userArray = message.content.split(" ");
     let userArgs = userArray.slice(1);
