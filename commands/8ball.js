@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(bot.user.username)
     .setColor("#9307D8")
     .setThumbnail("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
-    .addField("Soal: ", question)
+    .addField("Soal: ", questionArray)
     .addField("Javab: ", replies[result])
     .setFooter(message.author.tag)
     .setTimestamp();
