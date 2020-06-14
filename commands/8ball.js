@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail(member.user.displayAvatarURL(), message.author.tag)
     .addField("Soal: ", questionArgs)
     .addField("Javab: ", replies[result])
-    .setFooter("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
+    .setFooter(bot.user.displayAvatarURL(), bot.user.username)
     .setTimestamp();
 
     message.channel.send(ballembed);
