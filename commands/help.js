@@ -18,12 +18,12 @@ module.exports.run = async (bot, message, args) => {
     let seconds = Math.floor(bot.uptime / 1000) % 60;
 
 
-    //Custom Help command by using the second argument.
+    
     if(helpArgs[0] === 'gaming') {
         return message.reply("Commands Mored Estefadeh Gaming.")
     }
 
-    //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
+    
     if(!helpArgs[0]) {
         
         var embed = new Discord.MessageEmbed()
@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
         message.channel.send(embed);
     }
 
-    //Reads the moudle.exports.config (This line of code is on commands folder, each command will read automaticly) by the second argument (the command name) and shows the information of it.
+   
     if(helpArgs[0]) {
         let command = helpArgs[0];
 
