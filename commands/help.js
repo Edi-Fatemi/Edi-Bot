@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
             .setAuthor(message.author.tag, member.user.displayAvatarURL())
             .setTitle("Commands Mored Etefadeh :")
             .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear \nmemberinfo```')
-            .setThumbnail(bot.user.username, bot.user.displayAvatarURL())
+            .setThumbnail(bot.user.displayAvatarURL())
             .addFields(
                     { name: 'Prefix', value: '```$```', inline: true },
                     { name: "Uptime", value:`[**${days}d ${hours}h ${minutes}m ${seconds}s**]`, inline:true })
