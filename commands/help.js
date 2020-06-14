@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
         
         
             .setAuthor(`${bot.user.username} \n\n Commands Mored Etefadeh :`)
-            .setDescription('```help | hello | mute | unmute | addrole \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear | 8ball```')
+            .setDescription('```help | hello | mute | unmute | addrole \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear | 8ball \nmemberinfo```')
             .setThumbnail("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
             .addFields({ name: 'Prefix', value: '```$```'})
             .setColor('#9307D8')
