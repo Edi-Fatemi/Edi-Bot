@@ -18,6 +18,6 @@ module.exports = bot => {
         bot.user.setPresence({ activity: { name: bot.user.username + " Server.", type:"WATCHING" }, status: "online" });
         bot.user.setPresence({ activity: { name: bot.users.cache.size + " Members.", type:"WATCHING" }, status: "online" });
         bot.user.setPresence({ activity: { name: bot.guilds.cache.size + " Servers.", type:"WATCHING" }, status: "online" })
-    }, 5000)
+    }, 10000)
     
 }
