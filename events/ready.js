@@ -16,7 +16,7 @@ module.exports = bot => {
 
 		let status = statuses[Math.floor(Math.random() * statuses.length)];
         bot.user.setPresence({ activity: { name: bot.user.username + " Server.", type:"WATCHING" }, status: "online" });
-        bot.user.setPresence({ activity: { name: bot.users.cache.size + " Server.", type:"WATCHING" }, status: "online" });
+        bot.user.setPresence({ activity: { name: bot.users.cache.size + " Members.", type:"WATCHING" }, status: "online" });
         bot.user.setPresence({ activity: { name: bot.guilds.cache.size + " Servers.", type:"WATCHING" }, status: "online" })
     }, 5000)
     
