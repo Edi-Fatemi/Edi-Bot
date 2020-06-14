@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
     
     if (!args[1]) return message.reply("Lotfan Soal Kamel Beporsid.!");
 
-    let replies= ["Yes.", "No.", "Nemidonam.", "Shayad.", "Badan Soal konid.", "Kiri.", "Kheyli.", "Chokh Ziba.", "Sikim Khiyari.", "Shomale Yadam Bere", "Kos'sher Nago.", "Dorogh Migi.", "Begoo Be Emam Majid.", "Be Qoran Karim'ina.", "Ye Dildo Talaei."];
+    let replies = ["Yes.", "No.", "Nemidonam.", "Shayad.", "Badan Soal konid.", "Kiri.", "Kheyli.", "Chokh Ziba.", "Sikim Khiyari.", "Shomale Yadam Bere", "Kos'sher Nago.", "Dorogh Migi.", "Begoo Be Emam Majid.", "Be Qoran Karim'ina.", "Ye Dildo Talaei."];
     
     let result = replies[Math.floor(Math.random() * replies.length)];
     
@@ -22,8 +22,8 @@ module.exports.run = async (bot, message, args) => {
     .setTitle("8ball")
     .setColor("#9307D8")
     .setThumbnail(member.user.displayAvatarURL(), message.author.tag)
-    .addField("Soal: " + questionArgs)
-    .addField("Javab: " + replies[result])
+    .addField(`Soal:  ${questionArgs}`)
+    .addField(`Javab:  ${replies[result]}`)
     .setFooter(bot.user.username)
     .setTimestamp();
 
