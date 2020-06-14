@@ -18,8 +18,8 @@ module.exports.run = async (bot, message, args) => {
     const created = Math.floor(x / 86400000);
     const joined = Math.floor(y / 86400000);
 
-    const joineddate = moment.gmt(member.joinedAt).format("YYYY, MMMM Do dddd, HH:mm:ss");
-    const createddate = moment.gmt(member.createdAt).format("YYYY, MMMM Do dddd, HH:mm:ss");
+    const joineddate = moment.utc(member.joinedAt).format("YYYY, MMMM Do dddd, HH:mm:ss");
+    const createddate = moment.utc(member.createdAt).format("YYYY, MMMM Do dddd, HH:mm:ss");
     let status = member.presence.status;
 
     const userEmbed = new Discord.MessageEmbed()
