@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 
-var version = "(ver 1.0.0)"
+var version = "(ver 1.0.1)"
 module.exports = bot => {
     console.log(`${bot.user.username + " " + version} Ready!`);
 
