@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
     .addField('Joined the server At', `${joineddate} \n> ${joined} day(S) Ago`)
     .addField("Status", status)
     .setThumbnail("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
-    .setFooter(message.author.tag)
+    .setFooter(bot.user.username)
 
     message.channel.send(userEmbed);
 }
