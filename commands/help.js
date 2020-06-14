@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
             .setThumbnail("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
             .addFields(
                     { name: 'Prefix', value: '```$```', inline: true },
-                    { name: "Uptime", value:```**${days}d ${hours}h ${minutes}m ${seconds}s**```, inline:true })
+                    { name: "Uptime", value:`[**${days}d | ${hours}h | ${minutes}m | ${seconds}s**]`, inline:true })
             .setColor('#9307D8')
             .setFooter(bot.user.username)
             .setTimestamp();
