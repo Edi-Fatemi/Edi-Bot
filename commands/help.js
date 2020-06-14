@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
         
         
             .setAuthor(`${member.user.displayAvatarURL(), message.author.tag} \n\n Commands Mored Etefadeh :`)
-            .setDescription('```help | hello | mute | unmute | addrole \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear | 8ball \nmemberinfo```')
+            .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear \nmemberinfo```')
             .setThumbnail("https://cdn.discordapp.com/attachments/679511291794423830/719597839050604625/wallpaper.jpg")
             .addField({ name: 'Prefix', value: '```$```'})
             .addField(`**${days}D ${hours}H ${minutes}M ${seconds}S**`)
