@@ -3,10 +3,6 @@ const config = require("../config.json");
 
 module.exports.run = async (bot, message, args) => {
     if (!message.member.hasPermission(['MANAGE_ROLES'])) return;
-
-    let userArray = message.content.split(" ");
-    let userArgs = userArray.slice(1);
-
     let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(x => x.user.username === args.slice(0).join(" ") || x.user.username === args[0]);
     if(member.hasPermission(['MANAGE_ROLES']) && !message.member.hasPermission('MANAGE_ROLES')) return;
     
@@ -15,8 +11,7 @@ module.exports.run = async (bot, message, args) => {
         if(mutedRole) {
             member.roles.add(mutedRole);
             member.roles.remove(verifiedRole);
-            var embed = new Discord.MessageEmbed().setAuthor(member.user.tag);
-            message.channel.send(embed + `** Mute Shod. **` )
+            message.channel.send(`${member} ** Mute Shod. **` )
         }
 }
 
