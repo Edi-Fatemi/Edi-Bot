@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
         if(mutedRole) {
             member.roles.add(mutedRole);
             member.roles.remove(verifiedRole);
-            var embed = new Discord.MessageEmbed().setAuthor(member.user.tag, member.user.avatarURL());
+            var embed = new Discord.MessageEmbed().setAuthor(member.user.tag);
             message.channel.send(embed + `** Mute Shod. **` )
         }
 }
