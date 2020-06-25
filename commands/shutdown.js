@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "shutdown",
-    description: "Shutingdown Bot",
+    description: "Shuttingdown Bot",
     usage:  "$shutdown",
     accessableby: "Owner",
     aliases:  []
