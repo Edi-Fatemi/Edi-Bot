@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client({ disableEveryone: true });
+const bot = new Discord.Client();
 const config = require("./config.json");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const heroku = require("./config.json");
@@ -49,26 +49,7 @@ bot.on("message", async message => {
 	let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)))
 	if (commandfile) commandfile.run(bot, message, args)
 
-
 	
-	const scores = require("./scores.json");
-	typeof scores; // object
-
-	if(!scores[message.author.tag]){ // Check if there's an object called as message authors' tag
-	scores[message.author.tag] = { // Create a new object in scores variable
-		money: 0 // New property "money" in user object
-	};
-	}
-	if(message.author.bot) return;
-	if(!scores[message.author.tag]){ 
-		scores[message.author.id] = { 
-			money: 0 
-		};
-	}
-	scores[message.author.tag].money += 25;
-	fs.writeFileSync("./scores.json", JSON.stringify(scores))
-	
-
 });
 
 

@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
 const { Bio } = require('discord.bio');
-const scores = require("../scores.json");
-typeof scores;
 
 module.exports.run = async (bot, message, args) => {    
     let userArray = message.content.split(" ");
@@ -31,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
         
             .setAuthor(member.user.tag, member.user.displayAvatarURL())
             .setTitle("Commands Mored Etefadeh :")
-            .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear \nmemberinfo```')
+            .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear | dm \nmemberinfo```')
             .setThumbnail(bot.user.displayAvatarURL())
             .addFields(
                     { name: 'Prefix', value: '```$```', inline: true },
