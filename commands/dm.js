@@ -3,6 +3,7 @@ const config = require("../config.json");
 
 
 module.exports.run = async (bot, message, args) => {
+    let member = message.mentions.members.first() || message.guild.members.cache.get(userArgs[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === userArgs.slice(0).join(" ") || x.user.username === userArgs[0]) || message.member;
     
     if(!message.member.permissions.has("MANAGE_MESSAGES")) return message.channel.send("Shoma Permission Kafi Baraye Estefadeh Az In Command Ra Nadarid!");
     let user = message.mentions.members.first() || message.guild.members.cache.get(args[0])
