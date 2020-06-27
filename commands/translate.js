@@ -4,7 +4,7 @@ const translate = require("@vitalets/google-translate-api");
 
 module.exports.run = async (bot, message, args) => {
   
-    translate((from, to, res) => {
+    function translate(from, to, res) {
         
         let translateArray = message.content.split(" ")
         let translateArgs = translateArray.slice(3)
@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
             message.channel.send(res.from.to);
         }
 
-    });
+    };
     let persian = translate.from("fa-persian")
     let english = translate.to("en-us")
 };
