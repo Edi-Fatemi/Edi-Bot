@@ -4,10 +4,10 @@ const translate = require("@vitalets/google-translate-api");
 
 module.exports.run = async (bot, message, args) => {
   
-   translate("hello!", { from: "en", to: "fa" }).then((res) => {
-       if(message.content === "$hello"){
-            message.channel.send(res.text);
-    }
+   translate("hello where are you from!", { from: "en", to: "fa" }).then((res) => {
+       if (message.content === "$hello where are you from") {
+         message.channel.send(res.text);
+       }
      
    });
     
