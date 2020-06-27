@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
   
    translate(" where are you from!", { from: "en", to: "fa" }).then((res) => {
        if (message.content === " where are you from") {
-         message.channel.send(res.text);
+         message.channel.send(translate);
        }
      
    });
