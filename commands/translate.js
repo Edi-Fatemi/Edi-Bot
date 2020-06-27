@@ -16,8 +16,8 @@ module.exports.run = async (bot, message, args) => {
         }
 
     };
-    let persian = translate.from("fa-persian")
-    let english = translate.to("en-us")
+    let language = translate("fa-persian", "en-us");
+    
 };
 
 module.exports.config = {
