@@ -28,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
         
         
             .setAuthor(member.user.tag, member.user.displayAvatarURL())
-            .setTitle("Commands Mored Etefadeh :")
+            .setTitle("Commands Mored Estefadeh :")
             .setDescription('```help | hello | mute | unmute | addrole | 8ball \nremoverole | embed | kick | ban | meme | ping \nrestart | shutdown | uptime | gamers | cooldown \nsmasherbasher | mrhamed | eclipse | irpixel | clear | dm \nmemberinfo```')
             .setThumbnail(bot.user.displayAvatarURL())
             .addFields(
@@ -64,7 +64,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "help",
-    description: "Commmands Help",
+    description: "Commands Help",
     usage: "$help",
     accessableby: "Members",
     aliases: ["h"]
